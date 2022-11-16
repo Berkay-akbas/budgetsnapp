@@ -47,7 +47,7 @@ gem install rspec
 ### Run tests:
 
 ```
-rspec spec spec/[FILE NAME FROM THE SPEC FOLDER]
+rspec .
 ```
 
 ## 🤝 Contributing
