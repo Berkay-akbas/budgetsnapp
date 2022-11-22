@@ -5,6 +5,10 @@ ruby '3.1.2'
 
 gem 'cancancan', '~> 1.9'
 
+gem "font-awesome-sass", "~> 6.2.1"
+
+gem 'sassc-rails'
+
 gem 'devise'
 
 gem 'rubocop', '>= 1.0', '< 2.0'

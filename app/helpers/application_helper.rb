@@ -4,8 +4,14 @@ module ApplicationHelper
       'Categories'
     elsif controller == 'splash'
       'Welcome'
+    elsif controller == 'devise/sessions'
+      'LOGIN'
+    elsif controller == 'devise/registrations'
+      'REGISTER'
     else
       'Not implemented'
     end
   end
+  
 end
+

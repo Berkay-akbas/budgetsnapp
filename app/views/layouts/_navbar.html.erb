@@ -1,5 +1,7 @@
 <nav class="navbar">
-  <p>BudgetSnapp</p>
+  <%= link_to :back, :class => "navbar-back" do %>
+    <%= image_tag("left-arrow.png", :alt => "back") %>
+  <% end %>
   <h1><%= nav_bar_content(params[:controller]) %></h1>
   <div class="user-info">
      <ul class="navbar-user" >
