@@ -8,6 +8,7 @@
 
 body {
   background-color: #f5f6f8;
+  font-family: proxima-nova, sans-serif;
 }
 
 .navbar {
@@ -106,5 +107,19 @@ body {
 .forgot {
   text-decoration: none;
   color: #a1a1a1;
+  text-align: center;
+}
+
+.add-new-category {
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 0.5rem;
+}
+
+.cat-button {
+  background-color: rgb(95, 181, 36);
+  color: white;
+  padding: 1rem;
   text-align: center;
 }

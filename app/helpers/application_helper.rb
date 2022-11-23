@@ -12,6 +12,4 @@ module ApplicationHelper
       'Not implemented'
     end
   end
-  
 end
-

@@ -1,14 +1,24 @@
 <p style="color: green"><%= notice %></p>
-
-<h1>Categories</h1>
-
-<div id="categories">
-  <% @categories.each do |category| %>
-    <%= render category %>
-    <p>
-      <%= link_to "Show this category", category %>
-    </p>
-  <% end %>
+<% if @categories.length == 0 %>
+  <p>There are no categories yet.</p>
+<% else %>
+  <table class="cat-table">
+    <tbody class="cat-body">
+      <% @categories.each do |category| %>
+        <tr>
+          <td><%= image_tag (category.icon), class:"cat-icon" %>
+          </td>
+          <td><%= category.name %></td>
+          <td>
+            <%= link_to 'Show', category %>
+            <%= link_to 'Edit', edit_category_path(category) %>
+            <%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>
+<div class="cat-button">
+  <%= link_to "Add a new category", new_category_path, :class => "add-new-category" %>
 </div>
-
-<%= link_to "New category", new_category_path %>
