@@ -3,7 +3,8 @@ class ExpensesController < ApplicationController
 
   # GET /expenses or /expenses.json
   def index
-    @expenses = Expense.all
+    @category = Category.find(params[:category_id])
+    @expenses = @category.expenses.order('created_at DESC')
   end
 
   # GET /expenses/1 or /expenses/1.json
@@ -12,6 +13,7 @@ class ExpensesController < ApplicationController
   # GET /expenses/new
   def new
     @expense = Expense.new
+    @categories = current_user.categories
   end
 
   # GET /expenses/1/edit
@@ -19,17 +21,14 @@ class ExpensesController < ApplicationController
 
   # POST /expenses or /expenses.json
   def create
-    @expense = Expense.new(expense_params)
-
-    respond_to do |format|
-      if @expense.save
-        format.html { redirect_to expense_url(@expense), notice: 'Expense was successfully created.' }
-        format.json { render :show, status: :created, location: @expense }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @expense.errors, status: :unprocessable_entity }
-      end
+    @categories = current_user.categories
+    @expense = Expense.new(name: params[:name], amount: params[:number], category_id: params[:category], author_id: current_user.id)
+    if @expense.save
+      redirect_to category_expenses_path(params[:category])
+    else
+      render :new
     end
+  
   end
 
   # PATCH/PUT /expenses/1 or /expenses/1.json

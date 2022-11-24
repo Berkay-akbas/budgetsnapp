@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #f5f6f8;
+  background-color: #dbdbdb;
   font-family: proxima-nova, sans-serif;
 }
 
@@ -122,4 +122,44 @@ body {
   color: white;
   padding: 1rem;
   text-align: center;
+}
+
+.category-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: white;
+  margin: 1rem;
+}
+
+.cat-total {
+  margin-top: 2rem;
+}
+
+.cat-icon {
+  max-width: 4rem;
+}
+
+.cat-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #b1b1b1;
+  margin-right: auto;
+  margin-left: 1rem;
+}
+
+.cat-name {
+  margin-top: 2rem;
+}
+
+.cat-date {
+  font-size: 0.8rem;
+}
+
+.cat-date::before {
+  content: "";
+  position: absolute;
+  border-top: 1px solid #b1b1b1;
+  width: 80vw;
 }

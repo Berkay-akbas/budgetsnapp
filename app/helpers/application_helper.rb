@@ -8,6 +8,8 @@ module ApplicationHelper
       'LOGIN'
     elsif controller == 'devise/registrations'
       'REGISTER'
+    elsif controller == 'expenses'
+      'Expenses'
     else
       'Not implemented'
     end
