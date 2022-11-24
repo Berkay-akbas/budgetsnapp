@@ -1,0 +1,23 @@
+<nav class="navbar">
+  <%= link_to :back, :class => "navbar-back" do %>
+    <%= image_tag("left-arrow.png", :alt => "back") %>
+  <% end %>
+  <h1><%= nav_bar_content(params[:controller]) %></h1>
+  <div class="user-info">
+     <ul class="navbar-user" >
+        <% if user_signed_in? %>
+          <li>
+            Hi, <%= current_user.name%>
+          </li>
+          <li>
+            <%= button_to 'Log out', destroy_user_session_path, method: :delete, class: "logout-button" %>
+          </li>
+          
+        <% else %>
+          <li>
+            <%= link_to 'Log in', new_user_session_path, class: "login-button" %>
+          </li>  
+        <% end %>
+      </ul>
+  </div>
+</nav>

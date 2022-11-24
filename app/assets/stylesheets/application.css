@@ -1,0 +1,240 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dbdbdb;
+  font-family: proxima-nova, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  background-color: #3778c2;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+  color: white;
+  min-height: 5rem;
+  padding-left: 1rem;
+}
+
+.navbar h1 {
+  font-size: 1.1rem;
+  font-weight: 300;
+  font-family: proxima-nova, sans-serif;
+  letter-spacing: 0.1rem;
+  margin-left: 2.5rem;
+}
+
+.navbar-user li {
+  list-style: none;
+}
+
+.navbar p {
+  font-family: proxima-nova, sans-serif;
+  color: white;
+}
+
+.splash-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.splash-title {
+  font-family: proxima-nova, sans-serif;
+  font-size: 3em;
+  color: black;
+  margin-top: 15rem;
+}
+
+.splash-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.splash-button {
+  font-family: proxima-nova, sans-serif;
+  font-size: 1.5em;
+  color: white;
+  background-color: #3778c2;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px;
+  text-decoration: none;
+  text-align: center;
+  width: 90%;
+}
+
+.splash-button:hover {
+  background-color: #2a5e9a;
+}
+
+.navbar-back img {
+  width: 2rem;
+}
+
+.actions-login input {
+  background-color: #3778c2;
+  color: white;
+  border: none;
+  padding: 4%;
+  position: absolute;
+  right: 0;
+  top: 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+  border: none;
+}
+
+.field input {
+  padding: 1rem;
+  border: none;
+}
+
+.forgot {
+  text-decoration: none;
+  color: #a1a1a1;
+  text-align: center;
+}
+
+.add-new-category {
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 0.5rem;
+}
+
+.cat-button {
+  background-color: rgb(95, 181, 36);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.category-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: white;
+  margin: 1rem;
+}
+
+.cat-total {
+  margin-top: 2rem;
+}
+
+.cat-icon {
+  max-width: 4rem;
+}
+
+.cat-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #b1b1b1;
+  margin-right: auto;
+  margin-left: 1rem;
+}
+
+.cat-name {
+  margin-top: 2rem;
+}
+
+.cat-date {
+  font-size: 0.8rem;
+}
+
+.cat-date::before {
+  content: "";
+  position: absolute;
+  border-top: 1px solid #b1b1b1;
+  width: 60vw;
+}
+
+.field-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+  border: none;
+}
+
+.cat-field {
+  padding: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.cat-submit {
+  text-align: center;
+}
+
+.cat-submit input {
+  background-color: rgb(95, 181, 36);
+  color: white;
+  border: none;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.total-expense {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: white;
+  margin: 1rem;
+}
+
+.total-expense p {
+  margin: auto;
+  color: #858585;
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: white;
+  margin: 1rem;
+  color: #858585;
+}
+
+.expense-amount {
+  color: black;
+}
+
+.logout-button {
+  background-color: rgb(95, 181, 36);
+  color: white;
+  padding: 0.3rem;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.expenses-back {
+  position: absolute;
+  top: 1.4rem;
+  left: 1rem;
+  background-color: #3778c2;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+}
+
+.expenses-back img {
+  width: 2rem;
+}

@@ -1,0 +1,26 @@
+<p style="color: green"><%= notice %></p>
+<% if @user.categories.length == 0 %>
+  <p>There are no categories yet.</p>
+<% else %>
+<% @user.categories.each do |category| %>
+  <div class="category-wrapper" onclick="location.href='<%= category_expenses_path(category) %>'">
+    <div class="icon-wrapper">
+      <%= image_tag (category.icon), class:"cat-icon" %>
+    </div>
+    <div class="cat-info">
+      <div class="cat-name">
+        <%= category.name %>
+      </div>
+      <div class="cat-date">
+        <%= category.created_at.strftime('%Y %b %d') %>
+      </div>
+    </div>
+    <div class="cat-total">
+      <%= category.total_expenses %>
+    </div>
+  </div>
+  <% end %>
+<% end %>
+<div class="cat-button">
+  <%= link_to "Add a new category", new_category_path, :class => "add-new-category" %>
+</div>

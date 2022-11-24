@@ -1,0 +1,10 @@
+
+<%= form_with url: categories_path, method: :post, local: true do %>
+   <div>
+    <%= label_tag "title"%>
+    <%= text_field_tag "title" %>
+   <%= label_tag "text" %>
+    <%= text_area_tag "text" %>
+    <%= submit_tag "Send" %>
+ </div>
+<% end %>
