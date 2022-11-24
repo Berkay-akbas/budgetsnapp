@@ -64,6 +64,8 @@ Give a ⭐️ if you like this project!
 
 - Microverse
 
+- All the template colors, font, and layout distribution for the whole project were designed by [Gregoire Vella](https://www.behance.net/gregoirevella) on Behance. A link to the project [can be found here](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=). Check Gregoire for more amazing GUI and Graphic designs!
+
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
