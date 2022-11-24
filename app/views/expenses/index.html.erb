@@ -1,4 +1,7 @@
 <p style="color: green"><%= notice %></p>
+<%= link_to categories_path, :class => "expenses-back" do %>
+    <%= image_tag("left-arrow.png", :alt => "back") %>
+  <% end %>
 <% if @expenses.length == 0 %>
   <p>There are no expenses yet.</p>
 <% else %>
