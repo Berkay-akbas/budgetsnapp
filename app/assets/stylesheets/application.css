@@ -16,6 +16,8 @@ body {
   align-items: center;
   padding: 2%;
   color: white;
+  min-height: 5rem;
+  padding-left: 1rem;
 }
 
 .navbar h1 {
