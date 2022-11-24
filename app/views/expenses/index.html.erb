@@ -1,13 +1,23 @@
 <p style="color: green"><%= notice %></p>
-
-<h1>Expenses Hi</h1>
-
-<div id="expenses">
+<% if @expenses.length == 0 %>
+  <p>There are no expenses yet.</p>
+<% else %>
+<div class="total-expense">
+  <p>Total: <%= @total_expense %></p>
+</div>
+<div class="expenses">
   <% @expenses.each do |expense| %>
-    <%= expense.name %>
-    <%= expense.amount %>
+  <div class="expense-item">
+    <div class="expense-name">
+      <p><%= expense.name %></p>
+    </div>
+    <div class="expense-amount">
+      <p><%= expense.amount %></p>
+    </div>
+  </div>
   <% end %>
 </div>
+<% end %>
 
 <div class="cat-button">
   <%= link_to "Add a new expense", new_expense_path, :class => "add-new-category" %>

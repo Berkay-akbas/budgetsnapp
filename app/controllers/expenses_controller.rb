@@ -5,6 +5,7 @@ class ExpensesController < ApplicationController
   def index
     @category = Category.find(params[:category_id])
     @expenses = @category.expenses.order('created_at DESC')
+    @total_expense = @category.total_expenses
   end
 
   # GET /expenses/1 or /expenses/1.json

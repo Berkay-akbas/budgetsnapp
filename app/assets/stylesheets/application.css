@@ -25,6 +25,7 @@ body {
   font-weight: 300;
   font-family: proxima-nova, sans-serif;
   letter-spacing: 0.1rem;
+  margin-left: 2.5rem;
 }
 
 .navbar-user li {
@@ -162,4 +163,65 @@ body {
   position: absolute;
   border-top: 1px solid #b1b1b1;
   width: 80vw;
+}
+
+.field-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+  border: none;
+}
+
+.cat-field {
+  padding: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.cat-submit {
+  text-align: center;
+}
+
+.cat-submit input {
+  background-color: rgb(95, 181, 36);
+  color: white;
+  border: none;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.total-expense {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: white;
+  margin: 1rem;
+}
+
+.total-expense p {
+  margin: auto;
+  color: #858585;
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: white;
+  margin: 1rem;
+  color: #858585;
+}
+
+.expense-amount {
+  color: black;
+}
+
+.logout-button {
+  background-color: rgb(95, 181, 36);
+  color: white;
+  padding: 0.3rem;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
 }

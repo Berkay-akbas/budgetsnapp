@@ -10,11 +10,12 @@
       </ul>
     </div>
   <% end %>
-    <%= label_tag "Icon Url"%>
-    <%= text_field_tag "icon" %>
-    <%= label_tag "Name" %>
-    <%= text_field_tag "name" %>
-  <div>
+  <div class="field-wrapper">
+
+    <%= text_field_tag "icon", '', class: 'cat-field', placeholder: 'Icon Url' %>
+    <%= text_field_tag "name", '', class: 'cat-field', placeholder: 'Name' %>
+  </div>
+  <div class="cat-submit">
     <%= form.submit %>
   </div>
 <% end %>
