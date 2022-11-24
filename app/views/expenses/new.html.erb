@@ -2,7 +2,7 @@
    <div class="field-wrapper">
    
     <%= text_field_tag "name", '', class: 'cat-field', placeholder: 'Name' %>
-    <%= number_field_tag "number", '', class: 'cat-field', placeholder: 'Amount' %>
+    <%= number_field_tag "number", '', class: 'cat-field', placeholder: 'Amount', step: :any %>
     <%= label_tag "Select the category"%>
     <%= select_tag "category", options_from_collection_for_select(@categories, 'id', 'name') %>
     <div class="cat-submit">

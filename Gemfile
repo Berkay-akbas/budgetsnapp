@@ -9,6 +9,8 @@ gem 'font-awesome-sass', '~> 6.2.1'
 
 gem 'sassc-rails'
 
+gem 'rspec-rails'
+
 gem 'devise'
 
 gem 'rubocop', '>= 1.0', '< 2.0'
