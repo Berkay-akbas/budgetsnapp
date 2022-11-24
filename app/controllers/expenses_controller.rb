@@ -23,13 +23,13 @@ class ExpensesController < ApplicationController
   # POST /expenses or /expenses.json
   def create
     @categories = current_user.categories
-    @expense = Expense.new(name: params[:name], amount: params[:number], category_id: params[:category], author_id: current_user.id)
+    @expense = Expense.new(name: params[:name], amount: params[:number], category_id: params[:category],
+                           author_id: current_user.id)
     if @expense.save
       redirect_to category_expenses_path(params[:category])
     else
       render :new
     end
-  
   end
 
   # PATCH/PUT /expenses/1 or /expenses/1.json

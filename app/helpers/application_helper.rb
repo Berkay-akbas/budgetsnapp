@@ -1,14 +1,15 @@
 module ApplicationHelper
   def nav_bar_content(controller)
-    if controller == 'categories'
+    case controller
+    when 'categories'
       'Categories'
-    elsif controller == 'splash'
+    when 'splash'
       'Welcome'
-    elsif controller == 'devise/sessions'
+    when 'devise/sessions'
       'LOGIN'
-    elsif controller == 'devise/registrations'
+    when 'devise/registrations'
       'REGISTER'
-    elsif controller == 'expenses'
+    when 'expenses'
       'Expenses'
     else
       'Not implemented'
