@@ -4,7 +4,7 @@ RSpec.describe Expense, type: :model do
   let(:user) { User.create(name: 'John', email: 'j@j.j', password: '123456') }
   let(:category) { Category.create(name: 'Food', icon: 'https://www.flaticon.com/svg/static/icons/svg/3144/3144456.svg', author_id: user.id) }
   let(:expense) { Expense.create(name: 'Food', amount: 100.00, author_id: user.id, category_id: category.id) }
-
+  
   describe 'Validations' do
     it 'is valid with valid attributes' do
       expect(expense).to be_valid
