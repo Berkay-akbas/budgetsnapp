@@ -84,3 +84,4 @@ production:
   database: budgetsnapp_production
   username: budgetsnapp
   password: <%= ENV["BUDGETSNAPP_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
